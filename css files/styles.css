@@ -10,23 +10,92 @@ body {
     overflow: hidden;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     #container {
-        left: 80px;
+        left: 0px;
         top: 300px;
     }
-
+    #sidebar {
+        display: none;
+    }
+    #purple {
+        width: 75px;
+        height: 75px;
+        transform: translate(-50px, 70px);
+    }
+    #red {
+        width: 75px;
+        height: 75px;
+        transform: translate(-120px, 70px);
+    }
+    #orange {
+        width: 75px;
+        height: 75px;
+        transform: translate(-170px, 5px);
+    }
+    #yellow {
+        width: 75px;
+        height: 75px;
+        transform: translate(-120px, -60px);
+    }
+    #green {
+        width: 75px;
+        height: 75px;
+        transform: translate(-30px, -60px);
+    }
+    #blue {
+        width: 75px;
+        height: 75px;
+        transform: translate(10px, 5px);
+    }
+    #purple-img {
+        width: 75px;
+        height: 75px;
+        transform: translate(1px, 1px);
+    }
+    #red-img {
+        width: 75px;
+        height: 75px;
+        transform: translate(2px, 1px);
+    }
+    #orange-img {
+        width: 75px;
+        height: 75px;
+        transform: translate(1px, 1px);
+    }
+    #yellow-img {
+        width: 75px;
+        height: 75px;
+        transform: translate(5px, 5px);
+    }
+    #green-img {
+        width: 75px;
+        height: 75px;
+        transform: translate(0px, 1px);
+    }
+    #blue-img {
+        width: 75px;
+        height: 75px;
+        transform: translate(1px, 1px);
+    }
+    #halfs {
+        position: absolute;
+        left: -25px;
+        top: 50px;
+        transform: scale(0.75);
+    }
+    #mei {
+        transform: scale(0.75) translate(-140px, -40px);
+    }
 }
 
 .container {
-    width: 775px;
+    width: 725px;
     height: 680px;
     position: absolute;
     top: 148px;
     left: 553px;
     border: 2px solid transparent;
-    border-radius: 20px;
-    z-index: 10;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
@@ -40,6 +109,8 @@ body {
     border-radius: 250px 250px 0 0;
     position: absolute;
     z-index: 110;
+    left: 0px;
+    top: 0px;
 }
 
 #half-circle1 {
@@ -173,7 +244,7 @@ img {
     border: none;
     cursor: pointer;
     z-index: 200;
-    opacity: 0%;
+    opacity: 50%;
 }
 
 #purple-btn {
