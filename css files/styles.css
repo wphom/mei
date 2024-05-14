@@ -11,9 +11,12 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    #btns {
+        display: none;
+    }
     #container {
         left: 0px;
-        top: 300px;
+        top: 100px;
     }
     #sidebar {
         display: none;
