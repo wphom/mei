@@ -160,7 +160,6 @@ body {
     border-radius: 250px 250px 0 0;
     position: absolute;
     z-index: 120;
-    /* opacity: 40%; */
 }
 
 #fix1 {
@@ -247,7 +246,7 @@ img {
     border: none;
     cursor: pointer;
     z-index: 200;
-    opacity: 50%;
+    opacity: 0%;
 }
 
 #purple-btn {
@@ -361,7 +360,7 @@ img {
 
 #sidebar {
     position: fixed;
-    z-index: 100;
+    z-index: 1001;
     background: #2b193b;
     height: 100%;
     width: 75px;
@@ -374,55 +373,41 @@ img {
 }
 
 .option-link {
+    position: absolute;
+    /* border: 1px solid #fff; */
+    margin-top: 10px;
     text-decoration: none;
     color: #fff;
-    padding: 8px;
-    padding-left: 60px;
-    margin-left: -60px;
-    position: absolute;
-    top: 305px;
     left: 75px;
     white-space: nowrap;
+    opacity: 0%;
+    /* transition-delay: 0.2s; */
 }
 
 .bi {
     color: #fff;
     height: 50px;
     width: 50px;
+    float: left;
 }
 
 .option {
-    height: 41px;
-    margin-top: 40px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    height: 60px;
+    position: relative;
+    top: -300px;
+    margin-top: 170px;
     padding-bottom: 20px;
     opacity: 80%;
-    border: 2px dashes #000;
 }
 
 .option:hover {
     opacity: 100%;
 }
 
-#fest {
-    top:325px;
-    opacity: 0%;
-}
-
-#info {
-    padding-right: 45px;
-    margin-right: -45px;
-    top: 408px;
-    opacity: 0%;
-}
-#market {
-    padding-right: 110px;
-    margin-right: -110px;
-    top: 490px;
-    opacity: 0%;
-}
-
 #sidebar:hover {
-    width: 265px;
+    width: 300px;
 }
 
 #sidebar:hover + #darken {
@@ -432,6 +417,27 @@ img {
 
 #sidebar:hover .option-link {
     opacity: 80%;
+    top: -5px;
+    left: 10px;
+    padding-top: 55px;
+}
+#sidebar:hover .bi {
+    position: relative;
+    left: 70px;
+}
+#sidebar:hover .option {
+    border: 1px solid #985ed1;
+    transform: scale(1.5);
+    height: 100px;
+    padding-top: 10px;
+    width: 70%;
+    left: 35px;
+}
+#sidebar:hover #info {
+    left: 20px;
+}
+#sidebar:hover #market {
+    left: 55px;
 }
 
 #darken {
@@ -439,7 +445,6 @@ img {
     height: 100%;
     background: #000;
     position: absolute;
-    z-index: 500;
     z-index: 1000;
     top: 0%;
     left: 14.2%;
