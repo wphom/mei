@@ -11,6 +11,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        height: 70vh;
+        width: 70vh;
+    }
     #btns {
         display: none;
     }
@@ -365,7 +369,7 @@ img {
     height: 100%;
     width: 75px;
     margin: -8px;
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 15%;
     padding-left: 15px;
     overflow: hidden;
@@ -374,14 +378,12 @@ img {
 
 .option-link {
     position: absolute;
-    /* border: 1px solid #fff; */
-    margin-top: 10px;
+    border: 1px solid transparent;
+    margin-top: 25px;
     text-decoration: none;
     color: #fff;
-    left: 75px;
     white-space: nowrap;
     opacity: 0%;
-    /* transition-delay: 0.2s; */
 }
 
 .bi {
@@ -405,6 +407,26 @@ img {
 .option:hover {
     opacity: 100%;
 }
+
+#fest {
+    transform: translate(-10px, -20px);
+    padding: 12px;
+    padding-left: 19px;
+    padding-right: 13px;
+}
+#info {
+    transform: translate(-20px, -20px);
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 35px;
+}
+#market {
+    transform: translate(-55px, -20px);
+    padding: 12px;
+    padding-left: 60px;
+    padding-right: 58px;
+}
+
 
 #sidebar:hover {
     width: 300px;
@@ -430,8 +452,8 @@ img {
     transform: scale(1.5);
     height: 100px;
     padding-top: 10px;
-    width: 70%;
-    left: 35px;
+    width: 65%;
+    left: 45px;
 }
 #sidebar:hover #info {
     left: 20px;
