@@ -13,7 +13,7 @@ body {
 @media screen and (max-width: 480px) {
     body {
         height: 70vh;
-        width: 70vw;
+        width: 50vw;
     }
     #btns {
         display: none;
