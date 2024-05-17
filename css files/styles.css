@@ -13,7 +13,10 @@ body {
 @media screen and (max-width: 480px) {
     body {
         height: 70vh;
-        width: 50vw;
+        scrollbar-width: none;
+    }
+    body::-webkit-scrollbar {
+        display: none;
     }
     #btns {
         display: none;
