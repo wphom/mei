@@ -22,10 +22,11 @@ body {
         display: none;
     }
     #container {
-        left: 0px;
-        top: 100px;
+        left: -40px;
+        top: 50px;
         width: 500px;
         height: 600px;
+        transform: scale(0.8);
     }
     #sidebar {
         display: none;
