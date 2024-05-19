@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css files/page2.css">
+    <title>Page 2</title>
+</head>
+<body>
+    <div id="body"></div>
+    <div class="triangle" id="neck1"></div>
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+    <div id="neck2"></div>
+    <div id="head">
+        <div id="ear">
+            <div id="ear-fix1"></div>
+            <div id="ear-fix2"></div>
+            <div id="ear-fix3"></div>
+            <div id="ear-fix4"></div>
+            <div id="ear-fix5"></div>
+            <div id="ear-fix6"></div>
+            <div id="ear-fix7"></div>
+            <div id="ear-fix8"></div>
+        </div>
+        <div id="eye">
+            <div id="spike1"></div>
+            <div id="spike2"></div>
+            <div id="spike3"></div>
+        </div>
+        <div id="nose"></div>
+        <div id="mouth"></div>
+        <div id="back"></div>
+        <div id="fix1"></div>
+        <div id="fix2"></div>
+        <div id="mouth-fix1"></div>
+    </div>
+    <div class="hands" id="hand1"></div>
+    <div class="hands" id="hand2"></div>
+    <div id="title">ЭЗОТЕРИЧЕСКИЕ ЗНАЧЕНИЯ ОРГАНОВ ЧУВСТВ</div>
+    <div id="triangle"></div>
+</body>
+</html>
