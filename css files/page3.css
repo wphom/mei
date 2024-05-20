@@ -63,7 +63,7 @@ h1 {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
     width: 88%;
@@ -71,11 +71,56 @@ h1 {
 }
 
 .box {
-    background: #fefefe;
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
+    transform: scale(0.22) translate(0, -140%);
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
+.box:nth-child(1) {
+    left: -600px;
+}
+.box:nth-child(2) {
+    left: -50px;
+}
+.box:nth-child(3) {
+    left: 500px;
+}
+.box:nth-child(4) {
+    left: -600px;
+    top: 400px;
+}
+.box:nth-child(5) {
+    left: -50px;
+    top: 400px;
+}
+.box:nth-child(6) {
+    left: 500px;
+    top: 400px;
+}
+
+.box-txt {
+    font-family: 'Mysteria-Nouveau';
+    position: absolute;
+    top: 65%;
+    left: 28%;
+    color: #000;
+    font-size: 150px;
+    white-space: nowrap;
+}
+#mosj {
+    left: 17%;
+}
+.value {
+    font-family: 'Mysteria-Nouveau';
+    color: #000;
+    font-size: 150px;
+    position: absolute;
+    top: 75%;
+    left: 42%;
+    white-space: nowrap;
+}
+
 .fix {
     background: red;
     height: 70px;
