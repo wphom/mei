@@ -30,50 +30,59 @@ body {
 
 #sidebar {
     position: fixed;
-    left: 8px;
+    left: -13px;
+    top: -130px;
     z-index: 101;
     background: #2b193b;
-    height: 1000px;
-    width: 84px;
-    margin: -8px;
+    height: 1300px;
+    width: 117px;
     font-size: 25px;
-    padding-top: 15%;
-    padding-left: 15px;
     overflow: hidden;
 }
-.bi {
-    color: #fff;
-    height: 50px;
-    width: 50px;
-    transform: scale(1.03) translate(-10px);
-    margin-top: 150px;
-}
 .option {
-    border: 1px solid transparent;
-    padding-top: 35px;
-    padding-left: 26px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    opacity: 80%;
-    position: relative;
-    top: -200px;
-    left: -15px;
-    border-radius: 10px;
+    left: 5px;
+    border-radius: 20px;
+    opacity: 70%;
+    width: 120px;
+    transform: scale(0.8);
+}
+.option:nth-child(1) {
+    height: 100px;
+    position: absolute;
+    top: 360px;
+}
+.option:nth-child(2) {
+    height: 160px;
+    position: absolute;
+    top: 524px;
+}
+.option:nth-child(3) {
+    height: 100px;
+    position: absolute;
+    top: 760px;
+}
+.option img {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+#page2-img {
+    height: 160px;
+}
+#page3-img {
+    height: 90px;
 }
 .option:hover {
     opacity: 100%;
     background: #5e3780;
 }
-#page1 {
-    top: -175px;
-}
 #page2 {
-    top: -215px;
-    background: #5e3780;
     opacity: 100%;
-}
-#page3 {
-    top: -255px;
+    background: #5e3780;
 }
 
 #body {
@@ -471,18 +480,43 @@ body {
 
 #ear {
     box-sizing: content-box;
-    border: 1px solid #fff;
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
     position: absolute;
-    left: 200px;
-    top: 100px;
+    left: 780px;
+    top: 320px;
 }
-#ear img {
-    display: inline-block;
+#nose {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    left: 1009px;
+    top: 250px;
+    transform: rotate(12deg);
+}
+#eye {
+    position: absolute;
+    width: 130px;
+    height: 220px;
+    top: 260px;
+    left: 972px;
+    transform: rotate(5deg);
+}
+img {
     width: 100%;
     height: 100%;
-    border: 1px solid #fff;
+}
+#ear:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+#nose:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+#eye:hover {
+    filter: brightness(120%);
+    cursor: pointer;
 }
 
 #mouth {
@@ -510,4 +544,45 @@ body {
 }
 #mouth:hover .trans {
     filter: brightness(84%);
+}
+
+#text {
+    display: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 22px;
+    height: 900px;
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #8c00ff;
+}
+#close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightcoral;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#close:hover {
+    filter: brightness(120%);
+}
+
+.open {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: inherit;
+    opacity: 0;
+    cursor: pointer;
 }
