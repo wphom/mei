@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'Mysteria-Nouveau';
     font-style: normal;
-    src: url(/fonts/Mysteria-Nouveau.ttf);
+    src: url(../fonts/Mysteria-Nouveau.ttf);
 }
 
 body {
