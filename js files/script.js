@@ -21,6 +21,7 @@ const lungs = document.getElementById('orange-img')
 const ear = document.getElementById('yellow-img')
 const nose = document.getElementById('green-img')
 const hand = document.getElementById('blue-img')
+let winWidth = window.innerWidth
 
 function purpleBack() {
     purple.style.width = '150px'
@@ -73,75 +74,82 @@ function blueBack() {
 
 function zoom1() {
     box.style.transform = 'translate(400px, 300px)'
-    text1.style.transform = 'translate(-400px, 0px)'
+    text1.style.transform = 'translate(-600px, 0px)'
     text1.style.height = '650px'
     text1.style.width = '500px'
     txt.style.opacity = '100'
     text1.style.opacity = '100'
     ret.style.opacity = '100'
     btns.style.display = 'none'
-    ret.style.left = '240px'
-    ret.style.top = '30px'
+    ret.style.left = '-5%'
+    ret.style.top = '-5%'
 }
 function zoom2() {
     box.style.transform = 'translate(-400px, 300px)'
-    text1.style.transform = 'translate(400px, 0px)'
+    text1.style.transform = 'translate(200px, 0px)'
     text1.style.height = '650px'
     text1.style.width = '500px'
     txt.style.opacity = '100'
     text1.style.opacity = '100'
     ret.style.opacity = '100'
     btns.style.display = 'none'
-    ret.style.left = '1040px'
-    ret.style.top = '30px'
+    ret.style.left = '-5%'
+    ret.style.top = '-5%'
 }
 function zoom3() {
     box.style.transform = 'translate(-550px, 0px)'
-    text1.style.transform = 'translate(500px, 0px)'
+    text1.style.transform = 'translate(100px, 0px)'
     text1.style.height = '650px'
     text1.style.width = '500px'
     txt.style.opacity = '100'
     text1.style.opacity = '100'
     ret.style.opacity = '100'
     btns.style.display = 'none'
-    ret.style.left = '1135px'
-    ret.style.top = '30px'
+    ret.style.left = '-5%'
+    ret.style.top = '-5%'
 }
 function zoom4() {
     box.style.transform = 'translate(-500px, -300px)'
-    text1.style.transform = 'translate(300px, 100px)'
+    text1.style.transform = 'translate(100px, 0px)'
     text1.style.height = '650px'
     text1.style.width = '500px'
     txt.style.opacity = '100'
     text1.style.opacity = '100'
     ret.style.opacity = '100'
     btns.style.display = 'none'
-    ret.style.left = '940px'
-    ret.style.top = '130px'
+    ret.style.left = '-5%'
+    ret.style.top = '-5%'
 }
 function zoom5() {
     box.style.transform = 'translate(500px, -300px)'
-    text1.style.transform = 'translate(-300px, 100px)'
+    text1.style.transform = 'translate(-500px, 0px)'
     text1.style.height = '650px'
     text1.style.width = '500px'
     txt.style.opacity = '100'
     text1.style.opacity = '100'
     ret.style.opacity = '100'
     btns.style.display = 'none'
-    ret.style.left = '340px'
-    ret.style.top = '130px'
+    ret.style.left = '-5%'
+    ret.style.top = '-5%'
 }
 function zoom6() {
     box.style.transform = 'translate(500px, 0px)'
-    text1.style.transform = 'translate(-400px, 0px)'
+    text1.style.transform = 'translate(-600px,0px)'
     text1.style.height = '650px'
     text1.style.width = '500px'
     txt.style.opacity = '100'
     text1.style.opacity = '100'
     ret.style.opacity = '100'
     btns.style.display = 'none'
-    ret.style.left = '240px'
-    ret.style.top = '30px'
+    ret.style.left = '-5%'
+    ret.style.top = '-5%'
+}
+function zoomCenter() {
+    text1.style.height = '650px'
+    text1.style.width = '500px'
+    text1.style.opacity = '100'
+    txt.style.opacity = '100'
+    ret.style.opacity = '100'
 }
 
 ret.addEventListener('click', () => {
@@ -166,7 +174,13 @@ purpleBtn.addEventListener('click', () => {
     eye.style.width = '215px'
     eye.style.height = '215px'
     eye.style.transform = 'translate(8px, 7px)'
-    zoom1()
+    txt.textContent = 'С помощью органов зрения человек получает до 90% информации об окружающем мире. Это делает глаза одними из важнейших анализаторов в повседневной жизни. В отличие от других органов чувств, зрение человека позволяет не только распознавать объект, но также определять его расположение, следить за перемещением. Поэтому значение зрения для человека невозможно переоценить, а его ухудшение или потеря является большой проблемой.'
+    if (window.innerWidth > 1023) {
+        zoom1()
+    } else {
+        zoomCenter()
+    }
+    
 })
 redBtn.addEventListener('click', () => {
     red.style.width = '230px'
@@ -175,7 +189,13 @@ redBtn.addEventListener('click', () => {
     mouth.style.width = '215px'
     mouth.style.height = '215px'
     mouth.style.transform = 'translate(8px, 7px)'
-    zoom2()
+    txt.textContent = 'Вкус — ощущение, возникающее при действии различных веществ преимущественно на рецепторы вкуса (расположенные на вкусовых луковицах языка, а также задней стенки глотки, мягкого нёба, миндалины, надгортанника). Кроме сладкого, горького, кислого, соленого вкуса, современные люди в разных странах выделяют также умами (еще его называют вкусом мяса), терпкий, жгучий, мятный, щелочной, металлический и др. вкусы.'
+    if (window.innerWidth > 1023) {
+        zoom2()
+    } else {
+        zoomCenter()
+    }
+    
 })
 orangeBtn.addEventListener('click', () => {
     orange.style.width = '230px'
@@ -184,7 +204,13 @@ orangeBtn.addEventListener('click', () => {
     lungs.style.width = '215px'
     lungs.style.height = '215px'
     lungs.style.transform = 'translate(8px, 7px)'
-    zoom3()
+    txt.textContent = 'Органы равновеесия, воспринимают изменения положения тела в пространстве, а также действия на организм ускорений и изменений гравитационных сил. Органы равновесия беспозвоночных – статоцисты, у позвоночных – вестибулярный аппарат. У последних органы равновесия связаны с мозжечком и ретикулярной формацией, что обусловливает координацию их деятельности с другими сенсорными системами. Взаимодействие между вестибулярными центрами и нервными механизмами, связанными с работой мышечной системы, обеспечивает тонкую регуляцию тонуса мышц. Совокупность сигналов от статорецепторов лабиринтов, проприо- и механорецепторов, от глаз вызывает статокинетические рефлексы, которые регулируют у животных и человека нормальную ориентацию по отношению к направлению силы тяжести.'
+    if (window.innerWidth > 1023) {
+        zoom3()
+    } else {
+        zoomCenter()
+    }
+    
 })
 yellowBtn.addEventListener('click', () => {
     yellow.style.width = '230px'
@@ -193,7 +219,13 @@ yellowBtn.addEventListener('click', () => {
     ear.style.width = '215px'
     ear.style.height = '215px'
     ear.style.transform = 'translate(8px, 7px)'
-    zoom4()
+    txt.textContent = 'Слух имеет большее значение для основополагающих признаков человека, как социального существа, по сравнению с любым другим чувством. Он служит для предостережения об опасности, для приема информации, для овладения знаниями, для социальной коммуникации, и может вызывать очень сильные эмоции.'
+    if (window.innerWidth > 1023) {
+        zoom4()
+    } else {
+        zoomCenter()
+    }
+    
 })
 greenBtn.addEventListener('click', () => {
     green.style.width = '230px'
@@ -202,7 +234,13 @@ greenBtn.addEventListener('click', () => {
     nose.style.width = '215px'
     nose.style.height = '215px'
     nose.style.transform = 'translate(8px, 7px)'
-    zoom5()
+    txt.textContent = 'Обоняние — это способность чувствовать запахи. Есть много приятных запахов: запах разных цветов, запах леса, запах вкусной пищи. Но некоторые вещества пахнут неприятно. Это предупреждение об опасности: о том, что пища не пригодна для еды, или о том, что в воздухе находится вредное для человека вещество.'
+    if (window.innerWidth > 1023) {
+        zoom5()
+    } else {
+        zoomCenter()
+    }
+    
 })
 blueBtn.addEventListener('click', () => {
     blue.style.width = '230px'
@@ -211,5 +249,11 @@ blueBtn.addEventListener('click', () => {
     hand.style.width = '215px'
     hand.style.height = '215px'
     hand.style.transform = 'translate(8px, 7px)'
-    zoom6()
+    txt.textContent = 'Осязание — способность человека воспринимать прикосновение, боль, тепло, холод. Органом осязания служит кожа. Кожа позволяет человеку узнать многое о предметах, которые его окружают. На ощупь можно определить форму и размеры предмета, узнать, гладкий предмет или шершавый, холодный или тёплый.'
+    if (window.innerWidth > 1023) {
+        zoom6()
+    } else {
+        zoomCenter()
+    }
+    
 })

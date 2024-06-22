@@ -271,24 +271,66 @@ body {
 }
 .box:nth-child(1) {
     left: -600px;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .box:nth-child(2) {
     left: -50px;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .box:nth-child(3) {
     left: 500px;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .box:nth-child(4) {
     left: -600px;
     top: 400px;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .box:nth-child(5) {
     left: -50px;
     top: 400px;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .box:nth-child(6) {
     left: 500px;
     top: 400px;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
 .box-txt {
@@ -328,3 +370,12 @@ img {
     transform: scale(2.5) translate(-440px, 180px);
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

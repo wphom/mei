@@ -9,6 +9,29 @@
     font-style: normal;
     src: url(../fonts/Mysteria-Nouveau.ttf);
 }
+@media screen and (max-width: 768px) {
+    #human {
+        scale: 0.3;
+    }
+    #sidebar {
+        display: none;
+    }
+    #left-hand {
+        translate: -650px 1100px;
+    }
+    #right-hand {
+        translate: 620px 1090px;
+    }
+    #body {
+       translate: 98% 365%;
+    }
+    #head, #neck {
+        translate: -110% 120px;
+    }
+    #inner-head {
+        translate: -110% 120px;
+    }
+}
 
 body {
     background-color: #0b030e;
@@ -18,7 +41,6 @@ body {
     font-family: 'Mysteria-Nouveau';
     color: #9868e7;
     font-size: 60px;
-    width: 800px;
     text-align: center;
     position: absolute;
     left: 50%;
@@ -90,30 +112,31 @@ body {
     position: absolute;
     right: 620px;
     bottom: 50px;
-    border-radius: 40% 40% 6% 6% / 30% 30% 15% 15%; 
-    /* 15 ; 30 */
-    /* clip-path: ellipse(400px 100% at 50% 90%); */
+    border-radius: 40% 40% 6% 6% / 30% 30% 15% 15%;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
-/* #body::before {
-    content: '';
-    display: block;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-} */
-
+#neck {
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
 #neck1 {
     fill: #bf9b00;
     stroke: #bf9b00;
     stroke-width: 20;
     transform: rotate(180deg);
     position: absolute;
-    top: 585px;
+    top: 575px;
     left: 810px;
 }
 #neck2 {
@@ -121,7 +144,7 @@ body {
     height: 100px;
     width: 175px;
     position: absolute;
-    top: 521px;
+    top: 510px;
     left: 848px;
 }
 #neck2::before {
@@ -157,18 +180,41 @@ body {
     height: 220px;
     transform: rotate(5deg);
     position: absolute;
-    top: 380px;
+    top: 370px;
     left: 810px;
     border-radius: 0% 0% 20% 80% / 0% 0% 30% 75%;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 #head-up {
     background-color: #fed62f;
     width: 400px;
     height: 200px;
     position: absolute;
-    top: 200px;
+    top: 190px;
     left: 730px;
     border-radius: 45% 55% 0% 0% / 100% 45% 0% 0%;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#inner-head {
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
 #back-head {
@@ -199,11 +245,25 @@ body {
 #left-hand {
     bottom: 50px;
     left: 430px;
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 #right-hand {
     bottom: 50px;
     right: 430px;
     transform: rotateY(180deg);
+    opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
 #left-wrist {
@@ -523,14 +583,14 @@ img {
     height: 70px;
     border-radius: 0% 15% 10% 90% / 0% 50% 50% 100%;
     position: absolute;
-    top: 510px;
+    top: 500px;
     left: 1017px;
-    transform: rotate(15deg);
+    transform: rotate(20deg);
 }
 .trans {
     background-color: #fed62f;
     height: 15px;
-    width: 94px;
+    width: 92px;
     position: absolute;
     left: 1px;
     top: -2px;
@@ -548,7 +608,7 @@ img {
     display: none;
     background-color: #000;
     color: #fff;
-    font-size: 22px;
+    font-size: 30px;
     height: 900px;
     width: 650px;
     position: absolute;
@@ -583,4 +643,14 @@ img {
     border-radius: inherit;
     opacity: 0;
     cursor: pointer;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
