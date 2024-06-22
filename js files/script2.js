@@ -1,0 +1,5 @@
+var leftHand = document.getElementById('left-hand')
+var rightHand = document.getElementById('right-hand')
+var hand2 = leftHand.cloneNode(true)
+hand2.removeAttribute('id')
+rightHand.appendChild(hand2)
