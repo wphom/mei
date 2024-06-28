@@ -9,29 +9,6 @@
     font-style: normal;
     src: url(../fonts/Mysteria-Nouveau.ttf);
 }
-@media screen and (max-width: 768px) {
-    #human {
-        scale: 0.3;
-    }
-    #sidebar {
-        display: none;
-    }
-    #left-hand {
-        translate: -650px 1100px;
-    }
-    #right-hand {
-        translate: 620px 1090px;
-    }
-    #body {
-       translate: 98% 365%;
-    }
-    #head, #neck {
-        translate: -110% 120px;
-    }
-    #inner-head {
-        translate: -110% 120px;
-    }
-}
 
 body {
     background-color: #0b030e;

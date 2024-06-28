@@ -11,24 +11,6 @@ body {
     overflow: hidden;
 }
 
-@media screen and (max-width: 1023px) {
-    #container {
-        transform: translate(-150px);
-    }
-    .circle-btns {
-        translate: -150px;
-    }
-}
-@media screen and (max-width: 1500px) {
-    #container {
-        translate: -250px;
-    }
-
-    .circle-btns {
-        translate: -250px;
-    }
-}
-
 #container {
     width: 725px;
     height: 680px;

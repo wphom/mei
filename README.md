@@ -1,2 +1,1 @@
-# mei
-college project
+Индивидуальный проект
