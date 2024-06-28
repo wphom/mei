@@ -211,6 +211,10 @@ span {
     top: 75%;
 }
 
+img {
+    pointer-events: none;
+    user-select: none;
+}
 @keyframes appear {
     0% {
         opacity: 0%;
